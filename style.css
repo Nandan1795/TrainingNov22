@@ -1,0 +1,41 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+.containerfluid{width: 100%;}
+.container{width: 1400px;margin: 0 auto;}
+img{max-width: 100%;}
+input::placeholder{padding: 10px;}
+.header{display: flex;justify-content: space-between;align-items: baseline;}
+.leftHeader{display: flex;justify-content: space-between;align-items: center;}
+.leftHeader h6{margin:0 10px ;}
+.header img{width: 20px}
+.rightHeader span{margin: 0 10px;}
+.rightHeader input{background-color: black;color: white;border: none;border-radius: 2px;}
+.aboutme{display: flex;justify-content: space-between;align-items:center;margin: 10px 0;}
+.aboutmeContent h3 {
+    font-size: 50px;
+}
+.aboutme img{width:200px}
+.aboutme .aboutmeContent{margin: 0 10px}
+.pageform{
+    width: 80%;
+    margin: 40px auto;
+    padding: 5% 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.pageform h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+.input{display: flex;justify-content: center;align-items: center;gap: 20px;}
+
+.form_design{display: flex;flex-direction: column;    align-items: center;}
+
+.form_design input{border: none;background-color: azure;padding: 10px 0;}
+/* .form_design input ::placeholder{padding: 10px;} */
+textarea{    background-color: azure;}
+button {
+    background-color: black;
+    color: white;
+}
