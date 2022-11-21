@@ -31,3 +31,5 @@ let currentDate = `Today Date:${todaydate}/${month}/${year} <br/> <br/> `;
 let currentDay =`Today Day:${day} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}  <br/> <br/>`
 document.write(currentDate )
 document.write(currentDay)
+
+

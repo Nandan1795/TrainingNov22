@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+</head>
+
+<body>
+    <label for="name"></label>
+    <input type="text" id="name" />
+    <div id="output"></div>
+    <button> Get Local Storage</button>
+    <ul id="content"></ul>
+    <script>
+    //     var array =[]
+    //    var tag;
+    //     document.querySelector("button").addEventListener("click", (e) => {
+    //         e.preventDefault
+    //         var input1 = document.getElementById("name").value
+    //         array.push(input1)
+    //         for (let index = 0; index < array.length; index++) {
+    //             localStorage.setItem(`data${index}`, array[index])
+    //             var tag = document.createElement("p")
+    //             tag.innerHTML =localStorage.getItem(`data${index}`)
+    //         }
+    //     })
+
+    
+
+
+    document.querySelector("button").addEventListener("click", (e) => {
+        localData =localStorage.getItem("data")
+        if(localData){          
+            maindata = localData.split(",")
+            maindata.push(document.getElementById("name").value)
+            localStorage.setItem("data",maindata)
+            getlocalData()
+       }
+       else{
+        localStorage.setItem("data",document.getElementById("name").value)
+        getlocalData()
+       }
+    })
+
+
+    function getlocalData (){
+        data =localStorage.getItem("data")
+        if(data){
+            maindata = data.split(",")
+        document.getElementById("content").innerHTML =""
+        for(x of maindata){
+            newp = document.createElement("p")
+            newp.innerHTML = x
+            document.getElementById("content").appendChild(newp)
+        }
+        }
+        else{""}
+    }
+
+    getlocalData()
+
+
+    // document.querySelector("button").addEventListener("click", (e) => {
+    //   value =  document.getElementById("name").value
+    //     array.push(value)
+    //     for (let index = 0; index < array.length; index++) {
+    //         localStorage.setItem(`data${index}`,array[index])
+    //         var newli = document.createElement("li")
+    //         newli.innerHTML = localStorage.getItem(`data${index}`)
+    //         document.getElementById("content").appendChild(newli)
+            
+    //     }
+    // })
+        
+    </script>
+
+</body>
+
+</html>
