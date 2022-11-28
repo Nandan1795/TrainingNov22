@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.755);
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#canvas {
+  margin-top: 10px;
+  background-color: azure;
+  border-radius: 10px;
+}
+
+#source {
+  display: none;
+}
+#imgsource {
+  display: none;
+}
+
+    </style>
+</head>
+<body>
+    <h3>Canvas Animation</h3>
+    <canvas id="canvas" width="500" height="500"style="background-color:azure;">
+        <img src="https://i.ibb.co/HHBFJdH/char.png" alt="" id="source" />
+        <img src="./images/pexels-pixabay-206359.jpg" alt="" id="imgsource" />
+    <script src="script.js"></script>
+
+</body>
+</html>
